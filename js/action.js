@@ -7,15 +7,16 @@ var currentURL = document.URL;
 // Storage Stuff
 
 // Popup Code
+
 if(blocked){
 	$("#heading").css("color","red");
 	$("#status").html("Blocked.")
-	$("#icon").html("<i class = \"material-icons arefix\">error</i>")
+	$("#icon").html("<i class = \"material-icons prefix\">error</i>")
 }
 else{
 	$("#heading").css("color","green");
 	$("#status").html("Unblocked.")
-	$("#icon").html("<i class = \"material-icons arefix\">done</i>")
+	$("#icon").html("<i class = \"material-icons prefix\">done</i>")
 }
 if(colorStatus=="DEFAULT"){
 	$("nav").addClass("red")
@@ -27,6 +28,19 @@ $("a").hover(function(){
     }, function(){
     $(this).css("background-color", "white");
 });
+if(document.getElementById('natureAwaits').checked){
+	$('#optionsPage').css('background-color',"#dddfd4");
+	$("#optionsPageHeading").css("color","#fae596");
+}
+else if(document.getElementById('oceanSide').checked){
+	$('#optionsPage').css('background-color',"#f0eceb");
+}
+else if(document.getElementById('sleek').checked){
+	$('#optionsPage').css('background-color',"#252839");
+}
+else{
+	$('#optionsPage').css('background-color',"white");
+}
 // Functions
 function spellCheck(){
 

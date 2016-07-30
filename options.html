@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="">
 <head>
-  <title>Bootstrap Case</title>
+  <title>Options Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body id = "optionsPage">
 <div class="container">
-  <h2 class = "text-center text-info">Dynamic Tabs</h2>
+  <h2 id = "optionsPageHeading" class = "text-center text-info">Options Page</h2>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#info">Information</a></li>
     <li><a data-toggle="tab" href="#design">Design</a></li>
@@ -27,10 +27,14 @@
       <ul id="whitelist">
 
       </ul>
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     </div>
     <div id="design" class="tab-pane fade">
       <h3>Design</h3>
       <p>Choose the theme you choose for this extension (popup and options page.).</p>
+      <input type="checkbox" name="color" value="" id = "natureAwaits">Nature Awaits<br>
+      <input type="checkbox" name="color" value="" id = "oceanSide">Ocean Side<br>
+      <input type="checkbox" name="color" value="" id = "sleek">Sleek<br>
     </div>
     <div id="custom" class="tab-pane fade">
       <h3>Custom Settings</h3>

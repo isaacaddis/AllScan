@@ -4,7 +4,7 @@
 	<title>Popup</title>
 	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href ="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css
 " media="screen" title="no title" charset="utf-8">
 </head>
@@ -18,11 +18,11 @@
 	</nav>
 	<a href="">
 		<div class="container">
-			<div class="">
-			<span id="icon"></span>
+			<div class = "col-md-2">
+				<span id="icon"></span>
 			</div>
-			<div class="">
-				<h5 id = "heading"><span id="status"></span></h5>
+			<div class="col-md-10">
+				<h4 id="heading"><span id="status"></span></h4>
 			</div>
 		</div>
 	</a>
@@ -30,10 +30,10 @@
 	<a href="">
 		<div class="container">
 			<div class="">
-				<div class="">
+				<div class="col-md-2">
 					<i class="material-icons ">supervisor_account</i>
 				</div>
-				<div class="">
+				<div class="col-md-10">
 					<p class="light"><strong><span id="num"></span></strong> verified users have reported this site in the past 30 days</p>
 				</div>
 			</div>
@@ -43,10 +43,10 @@
 	<a href="">
 		<div class="container">
 			<div class="">
-				<div class="">
+				<div class="col-md-2">
 					<i class="material-icons">settings</i>
 				</div>
-				<div class="">
+				<div class="col-md-10">
 					<h5>Options</h5>
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 	</a>
 	<hr>
 	<div class="container">
-		<div class="">
+		<div class="col-md-2">
 			<a href="#" class="btn btn-primary">Report</a>
 		</div>
 	</div>
