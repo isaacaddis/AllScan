@@ -3,7 +3,9 @@ var exampleWhitelist = ["www.google.com, www.youtube.com"]
 var blocked;
 var numOfUsers;
 var colorStatus = "DEFAULT";
-var URL;
+var currentURL = document.URL;
+// Storage Stuff
+
 // Popup Code
 if(blocked){
 	$("#heading").css("color","red");
@@ -27,11 +29,10 @@ $("a").hover(function(){
 });
 // Functions
 function spellCheck(){
-	
+
 }
-var currentURL = document.URL;
 if(jQuery.inArray(currentURL,exampleWhitelist)== -1){
-	blocked = false;	
+	blocked = false;
 }
 else{
 	// Main code

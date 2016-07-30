@@ -3,14 +3,10 @@
 	"name":"AllScan",
 	"description": "An intelligent solution to phishing attacks.",
 	"version":"1.0.0",
-	"background": {
-		"scripts": ["js/jquery-3.1.0.min.js",
-"js/process.js"],
-		"persistent":false
-	},
 	"browser_action": {
 			"default_popup":"popup.html",
-			"default_icon": "images/placeholder.png"
+			"default_icon": "images/placeholder.png",
+			"default_title": "AllScan"
 	},
 	"content_scripts": [
 	  {
@@ -20,5 +16,9 @@
 	    "js": ["js/jquery-3.1.0.min.js","js/action.js"]
 	  }
 	],
-	"options_page": "options.html"
+	"permissions":[
+		"https://ajax.googleapis.com/"
+	],
+	"options_page": "options.html",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
